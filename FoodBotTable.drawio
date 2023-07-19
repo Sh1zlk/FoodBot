@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" modified="2023-07-19T09:23:49.547Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="E9nULu8hrV31mCqqTF_v" version="21.1.7" type="device">
+  <diagram name="Страница 1" id="_abEsOWJFat0BePLmzT0">
+    <mxGraphModel dx="1509" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SerDwOsFNLGhKJ1Ye8mp-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SerDwOsFNLGhKJ1Ye8mp-1" target="SerDwOsFNLGhKJ1Ye8mp-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SerDwOsFNLGhKJ1Ye8mp-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SerDwOsFNLGhKJ1Ye8mp-1" target="SerDwOsFNLGhKJ1Ye8mp-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SerDwOsFNLGhKJ1Ye8mp-1" value="User interface" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="30" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SerDwOsFNLGhKJ1Ye8mp-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SerDwOsFNLGhKJ1Ye8mp-3" target="SerDwOsFNLGhKJ1Ye8mp-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SerDwOsFNLGhKJ1Ye8mp-3" value="Категорії продуктів" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SerDwOsFNLGhKJ1Ye8mp-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SerDwOsFNLGhKJ1Ye8mp-4" target="SerDwOsFNLGhKJ1Ye8mp-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SerDwOsFNLGhKJ1Ye8mp-4" value="Рецепти" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SerDwOsFNLGhKJ1Ye8mp-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SerDwOsFNLGhKJ1Ye8mp-28" target="SerDwOsFNLGhKJ1Ye8mp-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SerDwOsFNLGhKJ1Ye8mp-28" value="&lt;ul&gt;&lt;li&gt;Овочі&lt;/li&gt;&lt;li&gt;Фрукти і ягоди&lt;/li&gt;&lt;li&gt;Сухофрукти&lt;/li&gt;&lt;li&gt;Цукерки, цукор&lt;/li&gt;&lt;li&gt;Торти&lt;/li&gt;&lt;li&gt;Хлібобулочні вироби&lt;/li&gt;&lt;li&gt;Крупи&lt;/li&gt;&lt;li&gt;Бобові&lt;/li&gt;&lt;li&gt;Горіхи&lt;/li&gt;&lt;li&gt;Гриби&lt;/li&gt;&lt;li&gt;М&#39;ясо&lt;/li&gt;&lt;li&gt;Ковбасні вироби&lt;/li&gt;&lt;li&gt;М&#39;ясні консерви&lt;/li&gt;&lt;li&gt;Молочні продукти&lt;/li&gt;&lt;li&gt;Яйця&lt;/li&gt;&lt;li&gt;Морепродукти&lt;/li&gt;&lt;li&gt;Зернові&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=default;fillColor=none;html=1;whiteSpace=wrap;verticalAlign=middle;overflow=hidden;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="180" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="SerDwOsFNLGhKJ1Ye8mp-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="SerDwOsFNLGhKJ1Ye8mp-34" target="SerDwOsFNLGhKJ1Ye8mp-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SerDwOsFNLGhKJ1Ye8mp-34" value="Йдемо на сайт&lt;br&gt;&lt;pre style=&quot;background-color:#1d1d26;color:#c9c9d1;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9,8pt;&quot;&gt;https://shuba.life&lt;/pre&gt;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="200" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SerDwOsFNLGhKJ1Ye8mp-36" value="Повертаємо в telega.ph" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SerDwOsFNLGhKJ1Ye8mp-38" value="Повертаємо таблицю з даними" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="540" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SerDwOsFNLGhKJ1Ye8mp-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="SerDwOsFNLGhKJ1Ye8mp-40" target="SerDwOsFNLGhKJ1Ye8mp-44">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="SerDwOsFNLGhKJ1Ye8mp-40" value="Database" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="640" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="SerDwOsFNLGhKJ1Ye8mp-44" value="Tables" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="344" y="740" width="140" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="SerDwOsFNLGhKJ1Ye8mp-46" value="&lt;ul style=&quot;border-color: var(--border-color);&quot;&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Овочі&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Фрукти і ягоди&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Сухофрукти&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Цукерки, цукор&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Торти&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Хлібобулочні вироби&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Крупи&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Бобові&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Горіхи&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Гриби&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;М&#39;ясо&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Ковбасні вироби&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;М&#39;ясні консерви&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Молочні продукти&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Яйця&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Морепродукти&lt;/li&gt;&lt;li style=&quot;border-color: var(--border-color);&quot;&gt;Зернові&lt;/li&gt;&lt;/ul&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="SerDwOsFNLGhKJ1Ye8mp-44">
+          <mxGeometry y="30" width="140" height="310" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
