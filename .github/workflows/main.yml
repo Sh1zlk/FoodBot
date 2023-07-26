@@ -12,6 +12,7 @@ jobs:
       run: |
         if docker ps -aqf "name=FoodBot"; then
           docker stop FoodBot && docker rm FoodBot
+          docker rmi foodbot:latest
         else
           echo "Container not exist"
         fi
@@ -20,7 +21,10 @@ jobs:
       run: git clone https://github.com/Sh1zlk/FoodBot.git && cd FoodBot
       
     - name: Build image
-      run: docker build -t FoodBot:v1.0 --build-arg TOKEN=${{ secrets.TOKEN_BOT }}
+      run: docker build -t foodfot:latest --build-arg TOKEN=${{ secrets.TOKEN_BOT }} .
+    
+    - name: Delete folder
+      run: rm -rf FoodBot
   
   deploy:
     needs: build
