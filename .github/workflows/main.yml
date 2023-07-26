@@ -21,6 +21,7 @@ jobs:
       run: git clone https://github.com/Sh1zlk/FoodBot.git && cd FoodBot
       
     - name: Build image
+      working-directory: ./FoodBot
       run: docker build -t foodfot:latest --build-arg TOKEN=${{ secrets.TOKEN_BOT }} .
     
     - name: Delete folder
