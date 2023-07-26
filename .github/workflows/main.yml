@@ -22,7 +22,7 @@ jobs:
       
     - name: Build image
       working-directory: ./FoodBot
-      run: docker build -t foodfot:latest --build-arg TOKEN=${{ secrets.TOKEN_BOT }} .
+      run: echo pwd && docker build -t foodbot:latest --build-arg TOKEN=${{ secrets.TOKEN_BOT }} .
     
     - name: Delete folder
       run: rm -rf FoodBot
@@ -33,4 +33,4 @@ jobs:
     
     steps:
     - name: Run container
-      run: docker run -d --name "FoodBot"
+      run: docker run -d --name "FoodBot" foodbot:latest
