@@ -1,0 +1,25 @@
+name: "Create docker image and deploy"
+on:
+  push:
+    branches: ['master']
+
+jobs:
+  build:
+    runs-on: self-hosted
+    
+    steps:
+    - name: Delete docker container
+      run: docker stop FoodBot && docker rm FoodBot
+      
+    - name: Clone project
+      run: git clone https://github.com/Sh1zlk/FoodBot.git && cd FoodBot
+      
+    - name: Build image
+      run: docker build -t FoodBot:v1.0 --build-arg TOKEN=${{ secrets.TOKEN_BOT }}
+  
+  deploy:
+    runs-on: self-hosted
+    
+    steps:
+    - name: Run container
+      run: docker run -d --name "FoodBot"
