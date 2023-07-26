@@ -1,0 +1,38 @@
+name: "Create docker image and deploy"
+on:
+  push:
+    branches: ['master']
+
+jobs:
+  build:
+    runs-on: self-hosted
+    
+    steps:
+    - name: Delete docker container
+      run: |
+        if docker ps -aqf "name=FoodBot"; then
+          docker stop FoodBot && docker rm FoodBot
+          docker rmi foodbot:latest
+        else
+          echo "Container not exist"
+        fi
+      
+    - name: Clone project
+      run: git clone https://github.com/Sh1zlk/FoodBot.git && cd FoodBot
+    - name: Echo pwd
+      run: pwd
+      
+    - name: Build image
+      working-directory: ./FoodBot
+      run: docker build -t foodbot:latest --build-arg TOKEN=${{ secrets.TOKEN_BOT }} .
+    
+    - name: Delete folder
+      run: rm -rf FoodBot
+  
+  deploy:
+    needs: build
+    runs-on: self-hosted
+    
+    steps:
+    - name: Run container
+      run: docker run -d --name "FoodBot" foodbot:latest
