@@ -12,7 +12,7 @@ jobs:
       run: |
         if docker ps -aqf "name=FoodBot"; then
           docker stop FoodBot && docker rm FoodBot
-        else:
+        else
           echo "Container not exist"
         fi
       
