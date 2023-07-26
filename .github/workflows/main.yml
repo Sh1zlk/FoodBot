@@ -19,10 +19,12 @@ jobs:
       
     - name: Clone project
       run: git clone https://github.com/Sh1zlk/FoodBot.git && cd FoodBot
+    - name: Echo pwd
+      run: pwd
       
     - name: Build image
       working-directory: ./FoodBot
-      run: echo pwd && docker build -t foodbot:latest --build-arg TOKEN=${{ secrets.TOKEN_BOT }} .
+      run: docker build -t foodbot:latest --build-arg TOKEN=${{ secrets.TOKEN_BOT }} .
     
     - name: Delete folder
       run: rm -rf FoodBot
