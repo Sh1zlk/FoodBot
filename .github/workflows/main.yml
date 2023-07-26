@@ -14,6 +14,7 @@ jobs:
           docker stop FoodBot && docker rm FoodBot
         else:
           echo "Container not exist"
+        fi
       
     - name: Clone project
       run: git clone https://github.com/Sh1zlk/FoodBot.git && cd FoodBot
