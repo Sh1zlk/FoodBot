@@ -9,6 +9,7 @@ jobs:
     
     steps:
     - name: Delete docker container
+      if: ${{docker ps -aqf "name=FoodBot"}}
       run: docker stop FoodBot && docker rm FoodBot
       
     - name: Clone project
