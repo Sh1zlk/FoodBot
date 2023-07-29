@@ -21,3 +21,11 @@ class Beans(Base):
     fats = Column(Float)
     carbohydrates = Column(Float)
     kcal = Column(Integer)
+
+    def __init__(self, name: str, water: float, squirrels: float, fats: float, carbohydrates: float, kcal: int):
+        self.name = name
+        self.water = water
+        self.squirrels = squirrels
+        self.fats = fats
+        self.carbohydrates = carbohydrates
+        self.kcal = kcal
