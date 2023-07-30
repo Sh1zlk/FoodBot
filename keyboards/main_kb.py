@@ -9,4 +9,4 @@
 
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
-main_kb = ReplyKeyboardMarkup(keyboard=[[KeyboardButton('Категорії'), KeyboardButton('Рецепти')]], resize_keyboard=True)
+main_kb = ReplyKeyboardMarkup(keyboard=[[KeyboardButton('Категорії📋'), KeyboardButton('Рецепти🥗')]], resize_keyboard=True)

@@ -7,12 +7,10 @@
 #
 # -----------------------------------------
 
-import csv
+# import csv
 
-table = ['beans', 'bread', 'cakes', 'canned_meat', 'cereals', 'crops', 'dairy_products', 'dried_fruits', 'eggs', 'fruit_n_berries', 'meat', 'mushrooms', 'nuts', 'sausages', 'seafood', 'sweet', 'vegetables']
+# table = ['beans', 'bread', 'cakes', 'canned_meat', 'cereals', 'crops', 'dairy_products', 'dried_fruits', 'eggs', 'fruit_n_berries', 'meat', 'mushrooms', 'nuts', 'sausages', 'seafood', 'sweet', 'vegetables']
 
-i = '3.1'
-print(int(float('3.1')))
 # with open('./database/foods.csv', encoding='utf-8') as f:
 #     reader = csv.reader(f)
 #     for row in reader:
@@ -32,3 +30,15 @@ print(int(float('3.1')))
 # soup = BeautifulSoup(r.text, "html.parser")
 # table = soup.findAll('table')
 # print(table)
+
+from database.models.database import Session
+from database.models.Vegetables import Vegetables
+
+
+session = Session()
+
+data = session.query(Vegetables).all()
+
+for obj in data:
+    print(obj.name)
+

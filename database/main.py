@@ -8,7 +8,6 @@
 # -----------------------------------------
 
 import os
-
 from models.database import DATABASE_NAME, Session, Metadata
 import creat_db as db_creator
 

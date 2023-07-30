@@ -8,5 +8,6 @@
 # -----------------------------------------
 
 from .categories import dp
+from .hello_func import dp
 
 __all__ = ['dp']

@@ -29,8 +29,7 @@ from models.Vegetables import Vegetables
 
 def create_database(load_data: bool = True):
     create_db()
-    if load_data:
-        _load_data(Session())
+
 
 def _load_data(session: Session):
     table_n_models = {'beans':Beans, 'bread':Bread, 'cakes':Cakes, 'canned_meat':Canned_meat, 'cereals':Cereals, 'crops':Crops, 'dairy_products':Dairy_products,
@@ -68,3 +67,4 @@ def _load_data(session: Session):
 
 if __name__ == '__main__':
     _load_data(Session())
+    # create_db()

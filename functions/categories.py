@@ -11,6 +11,12 @@ from loader import dp
 from aiogram import types
 from keyboards.main_kb import main_kb
 
-@dp.message_handler(commands=['start'])
-async def call_main_kb(msg: types.Message):
-    await dp.bot.send_message(text='Привіт', chat_id=msg.chat.id ,reply_markup=main_kb)
+@dp.message_handler(text='Категорії📋')
+async def categories(message: types.Message):
+    pass
+
+
+@dp.callback_query_handler()
+async def reply_name_categories(call: types.CallbackQuery):
+    pass
+
