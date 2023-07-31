@@ -31,14 +31,23 @@
 # table = soup.findAll('table')
 # print(table)
 
-from database.models.database import Session
-from database.models.Vegetables import Vegetables
+# from database.models.database import Session
+# from database.models.Vegetables import Vegetables
+#
+#
+# session = Session()
+#
+# data = session.query(Vegetables).all()
+#
+# for obj in data:
+#     print(obj.name)
+#     print(obj.id)
+#
 
+name_of_table = {'Бобові':'beans', 'Хліб':'bread', 'Торти':'cakes', "М'ясні консерви":'canned_meat', 'Крупи':'cereals', 'Зернові':'crops',
+                  'Молочні продукти':'dairy_products', 'Сухофрукти':'dried_fruits', 'Яйця':'eggs', 'Фрукти та ягоди':'fruit_n_berries', "М'ясо":'meat',
+                'Гриби':'mushrooms', 'Горіхи':'nuts', 'Ковбасні вироби':'sausages', 'Морепродукти':'seafood', 'Солодощі':'sweet', 'Овочі':'vegetables'
+                 }
 
-session = Session()
-
-data = session.query(Vegetables).all()
-
-for obj in data:
-    print(obj.name)
-
+for key, val in name_of_table:
+    print(key, val)

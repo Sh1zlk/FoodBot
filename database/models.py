@@ -7,7 +7,6 @@
 #
 # -----------------------------------------
 
-from .models.database import create_db, Session
 from .models.Bread import Bread
 from .models.Beans import Beans
 from .models.Cakes import Cakes
