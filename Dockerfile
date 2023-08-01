@@ -1,7 +1,7 @@
 FROM python:3.8
 
 ARG TOKEN=''
-ENV $TOKEN
+ENV TOKEN=$TOKEN
 # Update system package
 RUN apt-get update && apt-get upgrade -y
 
