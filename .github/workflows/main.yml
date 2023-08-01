@@ -21,7 +21,7 @@ jobs:
       
     - name: Clone project
       run: |
-        if [-d ./FoodBot]; then
+        if ! [-d ./FoodBot]; then
           echo "FoodBot dir exists"
           rm -rf ./FoodBot
           git clone https://github.com/Sh1zlk/FoodBot.git && cd FoodBot
