@@ -10,12 +10,14 @@ jobs:
     steps:
     - name: Delete docker container
       run: |
-        if docker ps -aqf "name=FoodBot"; then
+        if docker ps -a --filter "name=FoodBot" --format "{{.Names}}" | grep -q "your_container_name"; then
+          echo "Container exists"
           docker stop FoodBot && docker rm FoodBot
           docker rmi foodbot:latest
         else
-          echo "Container not exist"
+          echo "Container does not exist"
         fi
+
       
     - name: Clone project
       run: git clone https://github.com/Sh1zlk/FoodBot.git && cd FoodBot
