@@ -20,8 +20,15 @@ jobs:
 
       
     - name: Clone project
-      run: git clone https://github.com/Sh1zlk/FoodBot.git && cd FoodBot
-      
+      run: |
+        if [-d ./FoodBot]; then
+          echo "FoodBot dir exists"
+          rm -rf ./FoodBot
+          git clone https://github.com/Sh1zlk/FoodBot.git && cd FoodBot
+        else
+          git clone https://github.com/Sh1zlk/FoodBot.git && cd FoodBot
+        fi
+        
     - name: Build image
       working-directory: ./FoodBot
       run: docker build -t foodbot:latest --build-arg TOKEN=${{ secrets.TOKEN_BOT }} .
