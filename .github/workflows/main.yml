@@ -12,7 +12,8 @@ jobs:
       run: |
         if docker ps -a --filter "name=FoodBot" --format "{{.Names}}" | grep -q "your_container_name"; then
           echo "Container exists"
-          docker stop FoodBot && docker rm FoodBot
+          docker stop FoodBot  
+          docker rm FoodBot
           docker rmi foodbot:latest
         else
           echo "Container does not exist"
