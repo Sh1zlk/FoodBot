@@ -31,7 +31,7 @@ jobs:
         
     - name: Build image
       working-directory: ./FoodBot
-      run: docker build -t foodbot:latest --build-arg TOKEN=${{ secrets.TOKEN_BOT }} DATABABE_USER=${{ secrets.DATABABE_USER}} DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD}} .
+      run: docker build -t foodbot:latest --build-arg TOKEN=${{ secrets.TOKEN_BOT }} --build-arg DATABABE_USER=${{ secrets.DATABABE_USER}} --build-arg DATABASE_PASSWORD=${{ secrets.DATABASE_PASSWORD}} .
     
     - name: Delete folder
       run: rm -rf FoodBot
