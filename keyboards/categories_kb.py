@@ -31,7 +31,7 @@ def gen_products_in_kb(data: list):
     markup.row_width = 1
     try:
         for product in data:
-            markup.add(InlineKeyboardButton(text=product[0], callback_data=products_in_kb.new(product[1])))
+            markup.add(InlineKeyboardButton(text=product.name, callback_data=products_in_kb.new(product.id)))
     except Exception as ex:
         print(ex)
 

@@ -7,7 +7,7 @@
 #
 # -----------------------------------------
 
-from .categories import dp
-from .hello_func import dp
-from .recipe import dp
-__all__ = ['dp']
+from aiogram.dispatcher.filters.state import StatesGroup, State
+
+class RecipeName(StatesGroup):
+    product_name = State()

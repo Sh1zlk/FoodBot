@@ -14,8 +14,8 @@ from sqlalchemy.orm import sessionmaker
 # DATABASE_NAME = 'food.db'
 DATABASE_NAME ='food.sqlite'
 
-engine = create_engine(f'sqlite:///database/{DATABASE_NAME}')
-# engine = create_engine(f'postgresql+psycopg2://root:root@127.0.0.1:5432/food')
+# engine = create_engine(f'sqlite:///database/{DATABASE_NAME}')
+engine = create_engine(f'postgresql+psycopg2://root:root@127.0.0.1:5432/food')
 Session = sessionmaker(bind=engine)
 Metadata = MetaData()
 Metadata.reflect(bind=engine)

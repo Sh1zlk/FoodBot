@@ -44,10 +44,11 @@
 #     print(obj.id)
 #
 
-name_of_table = {'Бобові':'beans', 'Хліб':'bread', 'Торти':'cakes', "М'ясні консерви":'canned_meat', 'Крупи':'cereals', 'Зернові':'crops',
-                  'Молочні продукти':'dairy_products', 'Сухофрукти':'dried_fruits', 'Яйця':'eggs', 'Фрукти та ягоди':'fruit_n_berries', "М'ясо":'meat',
-                'Гриби':'mushrooms', 'Горіхи':'nuts', 'Ковбасні вироби':'sausages', 'Морепродукти':'seafood', 'Солодощі':'sweet', 'Овочі':'vegetables'
-                 }
+from database.models.database import Session
 
-for key, val in name_of_table:
-    print(key, val)
+session = Session()
+
+from database.models import Bread
+data = session.query().filter_by(name='Бублики').first()
+for product in data:
+    print(product.id, product.name)
