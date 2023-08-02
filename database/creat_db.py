@@ -36,14 +36,12 @@ def _load_data(session: Session):
                      'dried_fruits':Dried_fruits, 'eggs':Eggs, 'fruit_n_berries':Fruit_n_berries, 'meat':Meat, 'mushrooms':Mushrooms,
              'nuts':Nuts, 'sausages':Sausages, 'seafood':Seafood, 'sweet':Sweet, 'vegetables':Vegetables}
 
-    table = ['beans', 'bread', 'cakes', 'canned_meat', 'cereals', 'crops', 'dairy_products', 'dried_fruits', 'eggs', 'fruit_n_berries', 'meat', 'mushrooms',
-             'nuts', 'sausages', 'seafood', 'sweet', 'vegetables']
 
     with open('./foods.csv', encoding='utf-8') as f:
         reader = csv.reader(f)
         model = None
         for row in reader:
-            if row[0].strip() in table:
+            if row[0].strip() in table_n_models.keys():
                 model = table_n_models[row[0].strip()]
                 continue
 
