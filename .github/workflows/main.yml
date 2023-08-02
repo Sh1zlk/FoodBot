@@ -43,4 +43,4 @@ jobs:
     
     steps:
     - name: Run container
-      run: docker run -d --name "FoodBot" foodbot:latest
+      run: docker run -d --name "FoodBot" --network bot_network foodbot:latest
