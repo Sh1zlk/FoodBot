@@ -2,7 +2,18 @@ name: "Create docker image and deploy"
 on:
   push:
     branches: ['master']
-
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: 'Log level'
+        required: true
+        default: 'warning'
+        type: choice
+        options:
+        - info
+        - warning
+        - debug
+        
 jobs:
   build:
     runs-on: self-hosted
