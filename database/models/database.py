@@ -14,7 +14,7 @@ from sqlalchemy.orm import sessionmaker
 DATABABE_USER = os.environ.get('DATABABE_USER')
 DATABASE_PASSWORD = os.environ.get('DATABASE_PASSWORD')
 
-engine = create_engine(f'postgresql+psycopg2://{DATABABE_USER}:{DATABASE_PASSWORD}@pg_last:5432/food')
+engine = create_engine(f'postgresql+psycopg2://{DATABABE_USER}:{DATABASE_PASSWORD}@localhost:5432/food')
 Session = sessionmaker(bind=engine)
 Metadata = MetaData()
 Metadata.reflect(bind=engine)
